@@ -20,9 +20,7 @@ function getWeatherData() {
       let resultDiv = document.getElementById("resultDiv");
       resultDiv.innerHTML = `${weatherResult.name}<br>Temperature: ${weatherResult.main.temp}&deg;<br>Humidity: ${weatherResult.main.humidity}%<br>Description: ${weatherResult.weather[0].description}`;
     } else {
-      alert(
-        "Please enter a correct city and country name! (ex: USA(US), Canada(CA), South Korea(KR), China(CN), United Kingdom(UK)) Please find here more country codes. https://countrycode.org/"
-      );
+      alert("Please enter a correct city and country name!");
     }
   };
 }
