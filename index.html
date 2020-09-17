@@ -15,29 +15,18 @@
   <body>
     <div class="container mt-4">
       <h1 class="mb-4">Real-time Weather Checker</h1>
-      <table class="table">
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>City</td>
-            <td><input type="text" id="city-name" /></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Country</td>
-            <td><input type="text" id="country-code" /></td>
-          </tr>
-        </tbody>
-      </table>
-      <button
-        type="button"
-        class="btn btn-primary mb-4"
-        id="btnGetWeather"
-        onclick="getWeatherData()"
-      >
+      <div>
+        <span>1. Country</span>
+        <input id="country-code" type="text" />
+        <span>Ex: Canada - CA, United States - US, China - CN</span>
+      </div>
+      <div>
+        <span>2. City</span>
+        <input id="city-name" type="text" />
+      </div>
+      <button type="button" id="btnGetWeather" onclick="getWeatherData()">
         Get Weather Data
       </button>
-
       <div id="resultDiv" style="margin-bottom: 20px;"></div>
       <div>
         <p>
