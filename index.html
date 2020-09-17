@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-
+  <head>
+    <meta charset="UTF-8" />
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Real-time Weather Checker</title>
+  </head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Get Weather Data</title>
-</head>
-
-<body>
+  <body>
     <div class="container mt-4">
-        <h1 class="mb-4">Get Weather Data</h1>
+      <h1 class="mb-4">Real-time Weather Checker</h1>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>City</td>
+            <td><input type="text" id="city-name" /></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Country</td>
+            <td><input type="text" id="country-code" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        type="button"
+        class="btn btn-primary mb-4"
+        id="btnGetWeather"
+        onclick="getWeatherData()"
+      >
+        Get Weather Data
+      </button>
 
-        <table class="table">
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>City</td>
-                    <td><input type="text" id="city-name"></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Country</td>
-                    <td><input type="text" id="country-code"></td>
-                </tr>
-            </tbody>
-        </table>
-        <button type="button" class="btn btn-primary mb-4" id="btnGetWeather" onclick="getWeatherData()">Get Weather
-            Data</button>
-
-        <div id="resultDiv" style="margin-bottom: 20px;"></div>
-        <div>
-            <p>* Please check the country codes here, <a href="https://countrycode.org/"
-                    target="_blank">CountryCode.org</a> </p>
-        </div>
-
+      <div id="resultDiv" style="margin-bottom: 20px;"></div>
+      <div>
+        <p>
+          * Please check the country codes here,
+          <a href="https://countrycode.org/" target="_blank">CountryCode.org</a>
+        </p>
+      </div>
     </div>
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
