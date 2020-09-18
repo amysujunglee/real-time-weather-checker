@@ -8,6 +8,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Real-time Weather Checker</title>
   </head>
@@ -16,18 +22,25 @@
     <div class="container mt-4">
       <h1 class="mb-4">Real-time Weather Checker</h1>
       <div>
-        <span>1. Country</span>
+        <span class="font-weight-bold mr-3">1. Country</span>
         <input id="country-code" type="text" />
-        <span>Ex: Canada - CA, United States - US, China - CN</span>
+        <p>
+          (ex: United States - US, Canada - CA, China - CN, South Korea - KR)
+        </p>
       </div>
-      <div>
-        <span>2. City</span>
+      <div class="mb-4">
+        <span class="font-weight-bold mr-3">2. City</span>
         <input id="city-name" type="text" />
       </div>
-      <button type="button" id="btnGetWeather" onclick="getWeatherData()">
+      <button
+        class="btn btn-primary"
+        type="button"
+        id="btnGetWeather"
+        onclick="getWeatherData()"
+      >
         Get Weather Data
       </button>
-      <div id="resultDiv" style="margin-bottom: 20px;"></div>
+      <div class="my-3" id="resultDiv"></div>
       <div>
         <p>
           * Please check the country codes here,
