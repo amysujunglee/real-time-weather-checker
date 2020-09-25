@@ -3,7 +3,7 @@ const result = document.getElementById('result')
 function getWeatherData() {
   let cityName = document.getElementById("city-name").value;
   let countryCode = document.getElementById("country-code").value;
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=28155f48901bf4bd88a7799d5ea9eeca&units=metric`)
+  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName},${countryCode}&appid=28155f48901bf4bd88a7799d5ea9eeca&units=metric`)
     .then(res => res.json())
     .then(data => {
       result.innerHTML = `<p class="font-weight-bold mb-2">${data.name}</p>
@@ -11,7 +11,7 @@ function getWeatherData() {
       <p class="mb-0">Humidity: ${data.main.humidity}%</p>
       <p class="mb-0 text-capitalize">Description: ${data.weather[0].description}</p>`
     })
-    .catch(error => alert("Please enter a correct country and city name!"));
+    .catch(error => console.log('error!'));
 }
 
 // XMLHttpRequest version.
