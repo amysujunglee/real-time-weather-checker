@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <title>Real-time Weather Checker</title>
-  </head>
 
-  <body>
-    <div class="container mt-4">
-      <h1 class="mb-4">Real-time Weather Checker</h1>
-      <div>
-        <span class="font-weight-bold mr-3">1. Country</span>
-        <input id="country-code" type="text" />
-        <p>
-          (ex: United States - US, Canada - CA, China - CN, South Korea - KR)
-        </p>
-      </div>
-      <div class="mb-4">
-        <span class="font-weight-bold mr-3">2. City</span>
-        <input id="city-name" type="text" />
-      </div>
-      <button
-        class="btn btn-primary"
-        type="button"
-        id="btnGetWeather"
-        onclick="getWeatherData()"
-      >
-        Get Weather Data
-      </button>
-      <div class="my-3" id="resultDiv"></div>
-      <div>
-        <p>
-          * Please check the country codes here,
-          <a href="https://countrycode.org/" target="_blank">CountryCode.org</a>
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <title>Real-time Weather Checker</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="mb-4">Real-time Weather Checker</h1>
+    <div>
+      <span class="font-weight-bold mr-3">1. Country</span>
+      <input id="country-code" type="text" />
+      <p>
+        (ex: United States - US, Canada - CA, China - CN, South Korea - KR)
+      </p>
     </div>
-    <script src="main.js"></script>
-  </body>
+    <div class="mb-4">
+      <span class="font-weight-bold mr-3">2. City</span>
+      <input id="city-name" type="text" />
+    </div>
+    <button class="btn btn-primary" type="button" id="btnGetWeather" onclick="getWeatherData()">
+      Get Weather Data
+    </button>
+    <div class="my-3" id="resultDiv"></div>
+    <div>
+      <p>
+        * Please check the country codes here,
+        <a href="https://countrycode.org/" target="_blank">CountryCode.org</a>
+      </p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
