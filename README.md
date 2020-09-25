@@ -6,7 +6,7 @@ Languages used: JavaScript, HTML, CSS
 
 Methods used:
 
-- <strike>XMLHttpRequest()</strike>
+- <strike>XMLHttpRequest()</strike> to fetch()
 - .value
 - .open('GET', url)
 - .responseType
