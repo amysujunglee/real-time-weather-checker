@@ -6,7 +6,7 @@ Languages used: JavaScript, HTML, CSS
 
 Methods used:
 
-- XMLHttpRequest()
+- <strike>XMLHttpRequest()</strike>
 - .value
 - .open('GET', url)
 - .responseType
@@ -17,4 +17,4 @@ Methods used:
 
 Improvement:
 
-- Change XMLHttpRequest to fetch for API
+- Change XMLHttpRequest to fetch for API (2020/09)
