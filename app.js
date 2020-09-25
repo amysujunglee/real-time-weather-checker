@@ -11,10 +11,8 @@ function getWeatherData() {
       <p class="mb-0">Humidity: ${data.main.humidity}%</p>
       <p class="mb-0 text-capitalize">Description: ${data.weather[0].description}</p>`
     })
-    .catch(error => console.log('error!'));
+    .catch(error => alert("Please enter a correct country and city name!"));
 }
-
-getWeatherData()
 
 // XMLHttpRequest version.
 // function getWeatherData() {
