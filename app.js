@@ -1,4 +1,20 @@
 const result = document.getElementById('result')
+const country = document.getElementById('country-code')
+const city = document.getElementById('city-name')
+
+country.addEventListener('keyup', function (e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    getWeatherData();
+  }
+});
+
+city.addEventListener('keyup', function (e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    getWeatherData();
+  }
+});
 
 function getWeatherData() {
   let cityName = document.getElementById("city-name").value;
