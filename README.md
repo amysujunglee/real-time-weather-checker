@@ -15,6 +15,7 @@ Methods used:
 - .status === 200
 - JSON.parse()
 
-Improvement:
+Improvements:
 
-- Change XMLHttpRequest to fetch for API (2020/09)
+- Change XMLHttpRequest to fetch for calling API (2020/09)
+- Add 'Enter' key to get the weather result (2020/09)
