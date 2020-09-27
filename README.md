@@ -19,3 +19,5 @@ Improvements:
 
 - Change XMLHttpRequest to fetch for calling API (2020/09)
 - Add 'Enter' key to get the weather result (2020/09)
+- Update the page styling
+- Add graphics depending on the weather description
