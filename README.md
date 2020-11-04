@@ -1,6 +1,6 @@
 # real-time-weather-checker
 
-Get your country/city weather data by calling real-time weather API.
+Get your country/city weather data (temperature and short description) by calling real-time weather API.
 
 Languages used: JavaScript, HTML, CSS
 
