@@ -7,12 +7,11 @@ Get your country/city weather data (temperature and short description) by callin
 
 ## Methods
 - <strike>XMLHttpRequest()</strike> to fetch()
-- .value
-- .open('GET', url)
-- .responseType
-- .send()
-- if statement
-- .status === 200
+- value
+- open('GET', url)
+- responseType
+- send()
+- status === 200
 - JSON.parse()
 
 ## Future Improvements
